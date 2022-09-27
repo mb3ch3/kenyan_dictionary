@@ -54,15 +54,18 @@ section{
     border-top: 2px solid;
     border-bottom: 2px solid;
     max-width: 400px;
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 400px;
     padding: 30px 50px 50px 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
 h2{
-    font-size: 3vw;
+    font-size: 2vw;
 }
 .description{
     margin-top: 30px;
