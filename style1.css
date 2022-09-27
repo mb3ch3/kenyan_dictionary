@@ -25,6 +25,16 @@
 section{
     min-height: 100vh;
 }
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+.socials img{
+    max-width: 5vw;
+    max-height: 5vh;
+}
 .heading{
     display: flex;
     flex-direction: column;
