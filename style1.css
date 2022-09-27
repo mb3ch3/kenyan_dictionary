@@ -51,8 +51,12 @@ section{
     align-items: center;
     text-align: center;
 }
+h2{
+    font-size: 3vw;
+}
 .description{
     margin-top: 30px;
+    font-size: 1.2vw;
 }
 @media only screen and (max-width: 850px) {
     .rows{
