@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: beige;
+
+}
+/* .overlay{
+    position: absolute;
+    background-color: beige;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    height: 200%;
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 50px ;
+    overflow: hidden;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 260px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    animation: showup 1.3s ease-in-out;
+}
+.rows{
+    margin: 0px 50px;
+    display: flex;
+    padding: 5px 30px;
+    gap: 20px;
+}
+#row1{
+    animation: slideIn 1.5s ease ;
+}
+#row2{
+    animation: slideIn2 1.5s ease ;
+}
+#row3{
+    animation: slideIn 1.5s ease ;
+}
+.card{
+    border: 2px solid;
+    max-width: 400px;
+    padding: 30px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    margin-top: 30px;
+}
+@keyframes showup {
+    from {
+        transform:  translateY(1400px);
+    }
+    to {
+        transform:  translateY(0px);
+    }
+}
+@keyframes slideIn {
+    from {
+        transform:  translateX(1400px);
+    }
+    to {
+        transform:  translateX(0px);
+    }
+}
+@keyframes slideIn2 {
+    from {
+        transform:  translateX(-1400px);
+    }
+    to {
+        transform:  translateX(0px);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .rows{
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin: 20px;
+    }
+    .heading{
+        padding: 0;
+    }
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .rows{
+        flex-direction: row;
+        gap: 10px;
+        padding: 6px;
+        margin: 6px;
+    }
+    .heading{
+        padding: 50px;
+    }
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
